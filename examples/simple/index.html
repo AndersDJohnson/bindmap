@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Cache-Control" content="No-Cache">
+		<title></title>
+		<script src="../../src/script/lib/coffee-script.js"></script>
+		<script src="../../src/script/lib/sizzle.js"></script>
+		<script src="../../src/script/lib/EventTarget.js"></script>
+		<script src="../../src/script/main.coffee" type="text/coffeescript"></script>
+		<script src="script/app.coffee" type="text/coffeescript"></script>
+	</head>
+	<body>
+		
+		<div b:scope="page">
+			<div b:attrs="attrs">
+				Hello, <span b:bind="name" >...</span>!
+			</div>
+			<div>
+				Hello, <span b:scope="other" b:bind="name">...</span>!
+			</div>
+		</div>
+		
+	</body>
+</html>
